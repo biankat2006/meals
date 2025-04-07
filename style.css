@@ -59,16 +59,41 @@ header > button {
 }
 
 header > button:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 hr{
     margin: 1rem 0;
 }
 
-header + div{
+header + hr + div{
     display: grid;
     gap: 1.2rem;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
 
 }
+
+header + hr + div > div {
+    background-color: whitesmoke;
+    padding: 1rem;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-direction) var(--shadow-color);
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+header+hr+div>div:hover{
+    transform: scale(1.01);
+} 
+
+header+hr+div img{
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+header+hr+div h5{
+    margin-top: 1rem;
+}
+
